@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <center>
+    <h1>Dictionary</h1>
+    <br>
+    <div class="createList">
+      <form onsubmit="return createDictionary()">
+        <label for="addWord" style="font-size:22px;">You can personalize your own dictionary -
+          create it by yourself by typing in the words you want to be included:</label>
+          <br><br>
+          <input type="text" id="addWord" placeholder="Type the word to add"><br><br>
+          <input type="submit" value="Add the word">
+      </form>
+    </div>
+    <br>
+    <div class="searchWord">
+      <label for="myInput" style="font-size:22px;">Please type in the word you want to search for: </label>
+      <br><br>
+      <input type="text" id="myInput" name="searched" placeholder="Type the word to search"><br><br>
+      <button type="button" onclick="getInputValue();"> Search </button>
+    </div>
+    <br>
+    <p id="message"></p>
+    </center>
+    <script src="index.js"></script>
+  </body>
+</html>
